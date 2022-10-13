@@ -27,6 +27,9 @@
         <Style TargetType="StackPanel" x:Key="equipos">
             <Setter Property="MinHeight" Value="150"/>
         </Style>
+        <Style TargetType="WrapPanel">
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+        </Style>
     </Window.Resources>
     <StackPanel>
         <Border Style="{StaticResource bordeStack}">
@@ -39,7 +42,7 @@
                 </StackPanel.Background>
                 <StackPanel >
                     <TextBlock>Los Ángeles Lakers</TextBlock>
-                    <WrapPanel  HorizontalAlignment="Center">
+                    <WrapPanel>
                         <Image Source="assets/9_lakers.png"/>
                         <Image Source="assets/14_lakers.png"/>
                         <Image Source="assets/23_lakers.png"/>
@@ -59,7 +62,7 @@
                 </StackPanel.Background>
                 <StackPanel >
                     <TextBlock>Miami Heat</TextBlock>
-                    <WrapPanel  HorizontalAlignment="Center">
+                    <WrapPanel>
                         <Image Source="assets/7_heat.png"/>
                         <Image Source="assets/14_heat.png"/>
                         <Image Source="assets/22_heat.png"/>
