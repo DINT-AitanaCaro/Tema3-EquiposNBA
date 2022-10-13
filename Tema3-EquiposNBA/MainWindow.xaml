@@ -24,10 +24,13 @@
             <Setter Property="CornerRadius" Value="5"/>
             <Setter Property="Margin" Value="5"/>
         </Style>
+        <Style TargetType="StackPanel" x:Key="equipos">
+            <Setter Property="MinHeight" Value="150"/>
+        </Style>
     </Window.Resources>
     <StackPanel>
         <Border Style="{StaticResource bordeStack}">
-            <StackPanel MinHeight="150" >
+            <StackPanel Style="{StaticResource equipos}" >
                 <StackPanel.Background>
                     <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                         <GradientStop Color="#FF552583" Offset="0.069"/>
@@ -47,7 +50,7 @@
             </StackPanel>
         </Border>
         <Border Style="{StaticResource bordeStack}">
-            <StackPanel MinHeight="150">
+            <StackPanel Style="{StaticResource equipos}">
                 <StackPanel.Background>
                     <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                         <GradientStop Color="#FF16111B" Offset="0.069"/>
